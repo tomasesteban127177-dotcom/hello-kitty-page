@@ -1,0 +1,150 @@
+/* Paleta de colores pastel */
+:root {
+  --rosa: #ffb6c1;
+  --rosado-claro: #ffe4ec;
+  --amarillo: #fff9c4;
+  --lila: #e6d6f5;
+  --azul-claro: #cce7ff;
+  --verde-claro: #d4f8d4;
+  --texto: #333333;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía amigable y más grande */
+body {
+  font-family: "Comic Sans MS", "Poppins", cursive, sans-serif;
+  background: var(--rosado-claro);
+  color: var(--texto);
+  line-height: 1.9;
+  padding: 10px;
+  font-size: 1.2rem; /* letras más grandes */
+}
+
+/* Encabezado llamativo */
+header {
+  background: var(--rosa);
+  text-align: center;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  color: var(--texto);
+  font-size: 3rem; /* título más grande */
+  text-shadow: 3px 3px var(--blanco);
+  margin-bottom: 20px;
+}
+
+header img.header-img {
+  max-width: 180px;
+  margin: 15px auto;
+  display: block;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--texto);
+  background: var(--amarillo);
+  padding: 14px 20px;
+  border-radius: 15px;
+  font-size: 1.4rem; /* menú más grande */
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: var(--lila);
+  transform: scale(1.15);
+}
+
+/* Secciones */
+section {
+  background: var(--blanco);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 950px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  font-size: 1.3rem; /* texto más grande */
+}
+
+section h2 {
+  color: var(--rosa);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.4rem; /* subtítulos más grandes */
+  font-weight: bold;
+}
+
+section img.section-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 250px;
+  border-radius: 25px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: var(--azul-claro);
+  padding: 25px;
+  border-radius: 25px;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+footer img.footer-img {
+  max-width: 140px;
+  margin-top: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section img.section-img {
+    max-width: 180px;
+  }
+}
